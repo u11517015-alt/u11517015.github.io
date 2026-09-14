@@ -136,6 +136,36 @@
     text-decoration:none;
     border-bottom:1px solid var(--ink);
   }
+
+  .course-card{
+    display:block;
+    text-decoration:none;
+    padding:26px 0;
+    border-top:1px solid #ddd8c8;
+    transition:padding-left .2s ease;
+  }
+  .course-card:first-of-type{border-top:none;}
+  .course-card:hover{padding-left:8px;}
+  .course-card .course-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .course-card h3{font-size:20px;font-weight:600;}
+  .course-card .course-tag{
+    font-family:"Helvetica Neue",Arial,"Noto Sans TC",sans-serif;
+    font-size:12px;
+    color:var(--moss);
+  }
+  .course-card p{color:#3a3a34;max-width:62ch;margin-top:6px;}
+  .course-card .arrow{
+    display:inline-block;
+    margin-top:8px;
+    font-family:"Helvetica Neue",Arial,"Noto Sans TC",sans-serif;
+    font-size:13px;
+  }
   .placeholder-note{
     display:inline-block;
     margin-top:6px;
@@ -246,6 +276,21 @@
         </div>
       </li>
     </ul>
+  </div>
+</section>
+
+<section class="courses">
+  <div class="wrap">
+    <h2>課程作品</h2>
+
+    <a class="course-card" href="digital-tech.html">
+      <div class="course-head">
+        <h3>數位科技概論</h3>
+        <div class="course-tag">課程成果</div>
+      </div>
+      <p>查看這堂課的學習成果與作品，點進去即可瀏覽完整內容。</p>
+      <span class="arrow">查看課程成果 →</span>
+    </a>
   </div>
 </section>
 
